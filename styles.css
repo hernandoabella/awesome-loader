@@ -1,0 +1,80 @@
+/* Created by 🌍🌎🌏𝐀𝐢𝐦🌍🌎🌏 */
+
+@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
+body{
+  margin:0px;
+  padding:0px;
+  background-color:#09170D;
+  width:100%;
+  height:100vh;
+  
+}
+.load{
+  width:250px;
+  height:250px;
+  background-color:black;
+  border-radius:50%;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%) rotate(0deg);
+  animation:rotate 2s infinite linear ;
+  filter:hue-rotate(0deg);
+  
+}
+@keyframes rotate{
+  100%{
+    transform:translate(-50%,-50%) rotate(360deg) ; 
+    
+    
+  }
+}
+
+.load:before{
+  content:'';
+  left:0px;
+  position:absolute;
+  z-index:100;
+  width:125px;
+  height:250px;
+  background:linear-gradient(lime,transparent );
+  border-radius:150px 0px 0px 150px;
+  animation:color 5s infinite linear ;
+}
+@keyframes color{
+  100%{
+    filter:hue-rotate(360deg);
+  }
+    
+    
+  
+}
+
+.load:after{
+  content:'';
+  left:25px;
+  top:25px;
+  position:absolute;
+  z-index:100;
+  width:200px;
+  height:200px;
+  background:#09170D;
+  border-radius:50%;
+  
+}
+a{
+  position:absolute;
+  padding :5px 20px;
+  background-color:#323232;
+  text-align:center;
+  text-decoration :none;
+  color:#FFFFFF;
+    font-family: 'Otomanopee One', sans-serif;
+    border-radius:20px;
+    top:90%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  font-family: 'Otomanopee One', sans-serif;
+  background-color:#BC00FF;
+  animation:color 10s infinite linear ;
+}
